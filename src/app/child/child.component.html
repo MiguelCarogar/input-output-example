@@ -1,0 +1,6 @@
+<p>
+  {{ 'Child Component'}}
+</p>
+<div>  {{ 'Parent Value: ' + inputText }}</div>
+<label>{{ 'Value for Output: ' }}</label>
+<input  type="text" (keyup)="onKey()" [(ngModel)]="text" placeholder="'Enter Output'">

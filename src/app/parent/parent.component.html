@@ -1,0 +1,8 @@
+<p>
+  {{ 'Parent Component' }}
+</p>
+<div>
+  {{ 'Output Value: ' + outputText }}
+</div>
+<input type="text" [(ngModel)]="inputText">
+<app-child [inputText]="inputText" (outputText)="changeoOutputText($event)"></app-child>
